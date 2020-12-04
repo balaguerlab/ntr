@@ -1,6 +1,6 @@
 Neuronal trajectories reconstruction utilities in Matlab v1.7-beta.
 
-v1.7-beta. Current revision of this text 24 Nov 2020. Subject to MIT license: https://opensource.org/licenses/MIT
+v1.7-beta. Current revision of this text 24 Nov 2020. Under the terms of the MIT license: https://opensource.org/licenses/MIT
 
 by Emili Balaguer-Ballester et al. (see citations below)  https://staffprofiles.bournemouth.ac.uk/display/eb-ballester
 
@@ -15,19 +15,19 @@ Lapish, C. and Balaguer-Ballester, E. (shared first authorship), Phillips, A, Se
 Balaguer-Ballester, E., Tabas-Diaz, A., Budka, M., 2014. Can we identify non-stationary dynamics of trial-to-trial variability?. PLoS One, 9 (4).
 Hyman, J., Ma, L., Balaguer-Ballester, E., Durstewitz, D., Seamans, J. 2012. Contextual encoding by ensembles of medial prefrontal cortex neurons. PNAS, 109 (13)5086-5091.
 Balaguer-Ballester, E., Lapish, C.C., Seamans, J.K., Durstewitz, D. 2011. Attracting dynamics of frontal cortex ensembles during memory-guided decision-making. PLoS Comput Biol, 7 (5), e1002057.
-Requirements: Matlab © 2018 or more recent, parallel computing, statistics and machine learning, signal processing libraries. All subfolders must be added to the Matlab path.
+Requirements: Matlab ¬© 2018 or more recent, parallel computing, statistics and machine learning, signal processing libraries. All subfolders must be added to the Matlab path.
 
-How-to: For a demo, type î >ntrî. For standard use:
+How-to: For a demo, type ‚Äù >ntr‚Äù. For standard use:
 
-1) Drop a ".mat" or ASCII-type file (e.g. named ìfile_name.matî) on the .\data folder, where ì.\î indicates the directory containing this code. This ëfile_name.matí should contain a Matlab matrix named "data.mat" of dimension ìnumber of time bins x (dimensionality of neural responses+3)î, where the dimensionality of neural responses refers to the number of simultaneously recorded neurons. The dataset structure is:
+1) Drop a ".mat" or ASCII-type file (e.g. named ‚Äúfile_name.mat‚Äù) on the .\data folder, where ‚Äú.\‚Äù indicates the directory containing this code. This ‚Äòfile_name.mat‚Äô should contain a Matlab matrix named "data.mat" of dimension ‚Äúnumber of time bins x (dimensionality of neural responses+3)‚Äù, where the dimensionality of neural responses refers to the number of simultaneously recorded neurons. The dataset structure is:
 * Columns "1:end-3" of "Data" matrix: Neural responses over time.
 * Column "end-2" of "Data" matrix: Natural numbers>0, labelling the different stimuli or behavioural "epochs" in which the experimentalist segments the task. "-1" should encode "no-labelled" time-bins.
-* Column "end-1" of "Data" matrix: Natural numbers>0, they are alternative labelling used only for trial trajectory (see comments in file for more info). Those labels typically represent ìphasesî of the task, containing different ìepochsî. If this is irrelevant in the experiment, then this column can be a copy of "end-2" one.
-* Last column of "Data" matrix: Natural numbers>0, labelling the                       different trials of the task. Trials typically represents repetitions of the experiment, containing each the same ìphasesî of the task.
+* Column "end-1" of "Data" matrix: Natural numbers>0, they are alternative labelling used only for trial trajectory (see comments in file for more info). Those labels typically represent ‚Äúphases‚Äù of the task, containing different ‚Äúepochs‚Äù. If this is irrelevant in the experiment, then this column can be a copy of "end-2" one.
+* Last column of "Data" matrix: Natural numbers>0, labelling the                       different trials of the task. Trials typically represents repetitions of the experiment, containing each the same ‚Äúphases‚Äù of the task.
 
-2) ìkspaces_configuration.mî contains a default configuration.  Please find a detailed description of the parameters by typing ">help kspaces_configî.
+2) ‚Äúkspaces_configuration.m‚Äù contains a default configuration.  Please find a detailed description of the parameters by typing ">help kspaces_config‚Äù.
 
-3) type ">ntr(ëfile_nameí);î. Alternatively, one can load in the workspace the data matrix variable formatted as indicated in I.1 (e.g. ìData_matrix_nameî) and type ì>ntr(Data_matrix_name);"
+3) type ">ntr(‚Äòfile_name‚Äô);‚Äù. Alternatively, one can load in the workspace the data matrix variable formatted as indicated in I.1 (e.g. ‚ÄúData_matrix_name‚Äù) and type ‚Äú>ntr(Data_matrix_name);"
 
 Implementation:
 
@@ -40,7 +40,7 @@ kfd_multiv: Kernel Fisher-Discriminant
 kfd_multiv_orthogonal: Kernel Fisher-Discriminant - Discriminant subspace axes are orthogonalized
 kpca: Kernel principal components
 kspaces_config: Configuration file
-ntr: Starting function for the utility "neural activity trajectories reconstruction". For a demo, run î >ntrî.
+ntr: Starting function for the utility "neural activity trajectories reconstruction". For a demo, run ‚Äù >ntr‚Äù.
 setup_config: Auxiliar configuration file.
 shuff_data: Shuffles data across epochs.
 visualization: Displays a trial and a flow filed using kernel PCA/kernel FDA
