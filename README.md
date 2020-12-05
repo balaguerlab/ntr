@@ -14,9 +14,13 @@ Citation for this code: Balaguer-Ballester, E., Nogueira, R., Abofalia, J.M., Mo
 
 Previous versions:
 Lapish, C. and Balaguer-Ballester, E. (shared first authorship), Phillips, A, Seamans, J. and Durstewitz, D. 2015. Amphetamine Bidirectionally alters Prefrontal Cortex Attractor Dynamics during Working Memory. The Journal of Neuroscience 35(28): 10172-10187.
+
 Balaguer-Ballester, E., Tabas-Diaz, A., Budka, M., 2014. Can we identify non-stationary dynamics of trial-to-trial variability?. PLoS One, 9 (4).
+
 Hyman, J., Ma, L., Balaguer-Ballester, E., Durstewitz, D., Seamans, J. 2012. Contextual encoding by ensembles of medial prefrontal cortex neurons. PNAS, 109 (13)5086-5091.
+
 Balaguer-Ballester, E., Lapish, C.C., Seamans, J.K., Durstewitz, D. 2011. Attracting dynamics of frontal cortex ensembles during memory-guided decision-making. PLoS Comput Biol, 7 (5), e1002057.
+
 Requirements: Matlab © 2018 or more recent, parallel computing, statistics and machine learning, signal processing libraries. All subfolders must be added to the Matlab path.
 
 How-to: For a demo, type ” >ntr”. For standard use:
@@ -36,15 +40,25 @@ Implementation:
 .\
 
 10 main functions (in alphabetic order).
+
 dcm: Embedding for univariate time series using a delay coordinate map
+
 kfd_cross_val: Out-of-sample, cross-validation script
+
 kfd_multiv: Kernel Fisher-Discriminant
+
 kfd_multiv_orthogonal: Kernel Fisher-Discriminant - Discriminant subspace axes are orthogonalized
+
 kpca: Kernel principal components
+
 kspaces_config: Configuration file
-ntr: Starting function for the utility "neural activity trajectories reconstruction". For a demo, run ” >ntr”.
-setup_config: Auxiliar configuration file.
-shuff_data: Shuffles data across epochs.
+
+ntr: Starting function for the utility "neural activity trajectories reconstruction". For a demo, run ” >ntr”
+
+setup_config: Auxiliar configuration file
+
+shuff_data: Shuffles data across epochs
+
 visualization: Displays a trial and a flow filed using kernel PCA/kernel FDA
 
 .\priv
@@ -54,9 +68,13 @@ visualization: Displays a trial and a flow filed using kernel PCA/kernel FDA
 .\example
 
 Batch files and examples 
+
 global_stats, global_stats_residuals: Compares correct and incorrect trials 
+
 oneFileAnova: Examples of stats comparing behaviours
-example_optimize: Batch procces script, to demonstrate the optimization of the decoder on any data file.
+
+example_optimize: Batch procces script, to demonstrate the optimization of the decoder on any data file
+
 config_values: Auxiliary file for example_optimize
 
 
