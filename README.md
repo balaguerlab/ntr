@@ -1,6 +1,6 @@
-Neuronal trajectories reconstruction utilities in Matlab.
+Neuronal trajectories reconstruction utilities in Matlab.v1.7-beta.1
 
-https://zenodo.org/badge/latestdoi/318610207
+https://zenodo.org/badge/DOI/10.5281/zenodo.4307748.svg
 
 Current revision of this text 24 Nov 2020. Under the terms of the MIT license: https://opensource.org/licenses/MIT
 
